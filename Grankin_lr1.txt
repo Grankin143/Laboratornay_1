@@ -22,3 +22,45 @@
    git commit -m "Отчет"
 
 7) Добавить в файл отчета описание всех действий которые вам пришлось выполнить до текущего момента.
+
+8) Проиндексировать изменения.
+
+   git add Grankin_lr1.txt
+
+9) Cделать второй коммит+
+
+   git commit -m "Второй коммит"
+
+10) При выполнении остальных заданий обязательно вести отчет о своей работе. После внесения любых изменений в файл отчета проиндексировать изжмененияи сделать коммит.
+
+11) Продемонстрировать игнорирование , сравнение, удаление и перемещение файлов.
+
+    mkdir git_ignore
+    cd D:/lab/git_ignore
+    (открыл файл Notepad++, написал *.txt)
+    touch readme.txt (создаем .txt файл)
+    git add .
+    git status (файл readme игнорируется)
+    
+    сравнение
+    cd D:/lab
+    git diff --staged
+    
+    сравнения коммитов
+    git log --oneline
+    git diff 98d6b94 ba0fe6a
+
+    удаление
+    cd D:/lab/git_ignore
+    rm t.txt
+    git add t.txt
+
+    перемещение
+    cd D:/lab
+    mkdir papka
+    touch g.txt
+    git add .
+    mv g.txt/papka
+    git add g.txt
+    git add papka
+    
