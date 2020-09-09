@@ -97,6 +97,16 @@
     git tag
     git show v1.298d6b94
 
+    удаление метки
+    git tag v1.5
+    git tag
+    git tag -d v1.5
+
+14) Продемонстрировать создание ветки, перемещение по ним, объединение и удаление. Решение конфликтов слияния.
+
+    создание ветки test
+    git branch test
+    git log --oneline --decorate
+    git checkout test
     
-    
-    
+15) Продемонстрировать механизм прятанья (git stash)
