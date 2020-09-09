@@ -107,6 +107,24 @@
     создание ветки test
     git branch test
     git log --oneline --decorate
-    git checkout test
     
+    перемещение по веткам
+    git checkout test
+    git checkout master    
+
+    объединение ветки master и test
+    git checkout test
+    git add .
+    git commit -m "ветка test"
+    git checkout master
+    git log --oneline --decorate --graph --all
+  
+    git checkout master
+    git merge test
+    
+    удаление ветки test
+    git branch -D test    
+
 15) ѕродемонстрировать механизм пр€тань€ (git stash)
+
+    
