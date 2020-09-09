@@ -69,3 +69,34 @@
     git log
 
 13) Продемонстрировать механизм отмену сделанных изменений и работу с метками.
+
+    отмена коммета
+    git commit -m "коммит"
+    git add .
+    git commit --amend
+    git add .
+    
+    отмена изменений в файле
+    cd D:/lab/papka
+    (изменяю в файле g)
+    git checkout -- g.txt
+    
+    аннотированные метки
+    git tag -a v2.28.0 -m 'версия git'
+    git tag --list
+    git show v2.28.0
+
+    легковесные метки
+    git tag v.2.28.0-lw
+    git tag
+    git show v.2.28.0-lw
+
+    отложенная растановка меток
+    git log --pretty=oneline
+    git tag -a v1.298d6b94
+    git tag
+    git show v1.298d6b94
+
+    
+    
+    
